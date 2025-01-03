@@ -32,6 +32,8 @@ def get_img():
             if os.path.exists(os.path.join(path, filename + ".encrypted")):
                 file = util.get_encrypted_file(os.path.join(path, filename + ".encrypted"))
                 return send_file(io.BytesIO(file), download_name=filename)
+            else:
+                return jsonify({"code": 404, "msg": "File not found"}), 404
     except Exception as e:
         return jsonify({"code": 500, "msg": "Internal Server Error", "exception": str(e)}), 500
 
@@ -63,6 +65,7 @@ def upload_file():
     try:
         if need_secure:
             file = secure.encrypt(file)
+            print("加密中")
             filename += ".encrypted"
         util.save_file(os.path.join(path, filename), file)
 
