@@ -9,15 +9,11 @@
         "REQUEST_PATH_1": "PATH_TO_YOUR_LOCAL_DIR_1",
         "REQUEST_PATH_2": "PATH_TO_YOUR_LOCAL_DIR_2"
     },
-    "allowed_extensions": ["jpg", "png", "webp", "jpeg", "gif"],
-
-    "access_key": "ACCESS_KEY_ID",
-    "secret_key": "SECRET_ACCESS_KEY"
+    "allowed_extensions": ["jpg", "png", "webp", "jpeg", "gif"]
 }
 ```
 - `path`字段是一个字典，代表`请求路径`对应的`本地文件夹`
 - `allowed_extensions`字段是一个列表，代表允许上传的文件后缀名
-- `access_key`和`secret_key`字段代表你的API密钥，这个秘钥在第三方程序请求到你的服务器时会使用
 ## 🚀使用
 ### 1. 上传文件
 >`/api/upload`

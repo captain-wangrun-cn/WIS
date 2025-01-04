@@ -3,8 +3,5 @@
         "hifumi-wrsetu": "/disk/sdb/hifumi-wrsetu",
         "hifumi-wrsetu-banned": "/disk/sdb/hifumi-wrsetu-banned"
     },
-    "allowed_extensions": ["jpg", "png", "webp", "jpeg", "gif"],
-
-    "access_key": "HDzbM8uV3bQWSDV4TJVTrzRAcK5SsXxPYBuapHsm",
-    "secret_key": "Ym4XstRhzVcyjHWAZQJrXprKn6UAy3WC6B4CGHep"
+    "allowed_extensions": ["jpg", "png", "webp", "jpeg", "gif"]
 }
